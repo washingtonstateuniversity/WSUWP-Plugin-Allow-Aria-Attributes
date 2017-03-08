@@ -28,7 +28,23 @@ class WSUWP_Allow_Aria_Attributes {
 	 * @since 0.0.1
 	 */
 	public function setup_hooks() {
+		add_filter( 'mce_external_plugins', array( $this, 'add_mce_external_plugin' ) );
 		add_filter( 'wp_kses_allowed_html', array( $this, 'allowed_aria_attributes' ), 10, 2 );
+	}
+
+	/**
+	 * Adds a TinyMCE plugin to allow aria attributes in the editor context.
+	 *
+	 * @since 0.0.1
+	 *
+	 * @param array $plugins
+	 *
+	 * @return array
+	 */
+	public function add_mce_external_plugin( $plugins ) {
+		$plugins['allow_aria_attributes'] = plugins_url( 'js/tinymce-allow-aria-attributes.min.js', dirname( __FILE__ ) );
+
+		return $plugins;
 	}
 
 	/**
