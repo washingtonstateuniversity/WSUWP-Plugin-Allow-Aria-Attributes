@@ -33,7 +33,7 @@ class WSUWP_Allow_Aria_Attributes {
 	}
 
 	/**
-	 * Adds a TinyMCE plugin to allow aria attributes in the editor context.
+	 * Adds a TinyMCE plugin to allow ARIA attributes in the editor context.
 	 *
 	 * @since 0.0.1
 	 *
@@ -68,7 +68,7 @@ class WSUWP_Allow_Aria_Attributes {
 	}
 
 	/**
-	 * Merges a preset list of aria attributes into an allowed HTML element's array
+	 * Merges a preset list of ARIA attributes into an allowed HTML element's array
 	 * of allowed attributes.
 	 *
 	 * @since 0.0.1
