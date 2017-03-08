@@ -1,0 +1,16 @@
+.distignore
+.git
+.gitignore
+.travis.yml
+composer.json
+composer.lock
+package.json
+Gruntfile.js
+phpcs.ruleset.xml
+phpunit.xml
+README.md
+vendor
+tests
+src
+bin
+node_modules

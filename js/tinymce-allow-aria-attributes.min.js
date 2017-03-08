@@ -1,0 +1,1 @@
+!function(a){a.PluginManager.add("allow_aria_attributes",function(a){a.on("preInit",function(){var b="";Object.keys(a.schema.elements).forEach(function(a){b+=a+"[aria-describedby|aria-hidden|aria-label|aria-labelledby],"}),a.schema.addValidElements(b)})})}(window.tinymce);
