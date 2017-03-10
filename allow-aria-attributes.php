@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Allow Aria Attributes
-Version: 0.0.1
+Version: 0.0.2
 Description: Allows the use of select Aria attributes when creating content in WordPress.
 Author: washingtonstateuniversity, jeremyfelt
 Author URI: https://web.wsu.edu/
